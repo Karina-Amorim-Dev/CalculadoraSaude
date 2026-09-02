@@ -1,0 +1,1248 @@
+/* ================================================================
+   CONFIGURAÇÕES GERAIS
+   ================================================================ */
+
+:root {
+    --cor-principal: #2563eb;
+    --cor-principal-hover: #1d4ed8;
+
+    --cor-fundo: #f3f6fa;
+    --cor-branco: #ffffff;
+
+    --cor-texto: #1f2937;
+    --cor-texto-secundario: #6b7280;
+
+    --cor-borda: #dbe2ea;
+
+    --cor-sucesso: #198754;
+    --cor-atencao: #d97706;
+    --cor-alerta: #dc3545;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ================================================================
+   RESET
+   ================================================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+
+/* ================================================================
+   CONTAINER PRINCIPAL DA APLICAÇÃO
+   ================================================================ */
+
+.app-container {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ================================================================
+   NAVBAR
+   ================================================================ */
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 18px 50px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+
+    color: white;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+.navbar-titulo {
+    margin: 0;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: opacity 0.2s ease;
+}
+
+
+/* ================================================================
+   EFEITO DO TÍTULO DA NAVBAR
+   ================================================================ */
+
+.navbar-titulo:hover {
+    color: white;
+
+    opacity: 0.85;
+}
+
+
+/* ================================================================
+   LINKS DA NAVBAR
+   ================================================================ */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ================================================================
+   LINKS
+   ================================================================ */
+
+.nav-links a {
+    display: block;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* ================================================================
+   EFEITO AO PASSAR O MOUSE
+   ================================================================ */
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    transform: translateY(-1px);
+}
+
+
+/* ================================================================
+   LINK ATIVO
+   ================================================================ */
+
+.nav-links a.link-ativo {
+    background-color: white;
+
+    color: var(--cor-principal);
+}
+
+
+/* ================================================================
+   CONTEÚDO PRINCIPAL
+   ================================================================ */
+
+.conteudo {
+    width: 100%;
+
+    flex: 1;
+
+    padding: 50px 20px;
+}
+
+
+/* ================================================================
+   PÁGINA INICIAL
+   ================================================================ */
+
+.pagina {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 50px 40px;
+
+    background-color: var(--cor-branco);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+/* ================================================================
+   TÍTULO DA PÁGINA INICIAL
+   ================================================================ */
+
+.pagina h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--cor-principal);
+
+    font-size: 34px;
+}
+
+
+/* ================================================================
+   TEXTOS DA PÁGINA INICIAL
+   ================================================================ */
+
+.pagina p {
+    margin: 10px 0;
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================================================
+   PÁGINAS DE CÁLCULO
+   ================================================================ */
+
+.pagina-calculo {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-color: var(--cor-branco);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================================================
+   TÍTULOS DAS CALCULADORAS
+   ================================================================ */
+
+.pagina-calculo h1,
+.pagina-calculo h2 {
+    margin-top: 0;
+
+    margin-bottom: 25px;
+
+    color: var(--cor-principal);
+}
+
+
+/* ================================================================
+   TEXTO DAS CALCULADORAS
+   ================================================================ */
+
+.pagina-calculo p {
+    color: var(--cor-texto-secundario);
+
+    line-height: 1.6;
+}
+
+
+/* ================================================================
+   FORMULÁRIO
+   ================================================================ */
+
+.formulario {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ================================================================
+   LABELS
+   ================================================================ */
+
+.formulario label,
+.pagina-calculo > label {
+    margin-top: 10px;
+
+    color: var(--cor-texto);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================================================================
+   CAMPOS DE TEXTO, NÚMERO E SELECT
+   ================================================================ */
+
+.formulario input,
+.pagina-calculo > input,
+.pagina-calculo > select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--cor-borda);
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: var(--cor-texto);
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ================================================================
+   FOCO DOS CAMPOS
+   ================================================================ */
+
+.formulario input:focus,
+.pagina-calculo > input:focus,
+.pagina-calculo > select:focus {
+    border-color: var(--cor-principal);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ================================================================
+   PLACEHOLDER
+   ================================================================ */
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ================================================================
+   BOTÕES
+   ================================================================ */
+
+.formulario button,
+.pagina-calculo > button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--cor-principal);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ================================================================
+   HOVER DOS BOTÕES
+   ================================================================ */
+
+.formulario button:hover,
+.pagina-calculo > button:hover {
+    background-color: var(--cor-principal-hover);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ================================================================
+   RESULTADO
+   ================================================================ */
+
+.resultado {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-left: 5px solid;
+
+    border-radius: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================================================
+   IMC NORMAL
+   ================================================================ */
+
+.resultado.imc-normal {
+    background-color: #eaf7ee;
+
+    border-left-color: var(--cor-sucesso);
+}
+
+
+.resultado.imc-normal strong {
+    color: var(--cor-sucesso);
+}
+
+
+/* ================================================================
+   IMC ATENÇÃO
+   ================================================================ */
+
+.resultado.imc-atencao {
+    background-color: #fff6e0;
+
+    border-left-color: var(--cor-atencao);
+}
+
+
+.resultado.imc-atencao strong {
+    color: var(--cor-atencao);
+}
+
+
+/* ================================================================
+   IMC ALERTA
+   ================================================================ */
+
+.resultado.imc-alerta {
+    background-color: #fdecea;
+
+    border-left-color: var(--cor-alerta);
+}
+
+
+.resultado.imc-alerta strong {
+    color: var(--cor-alerta);
+}
+
+
+/* ================================================================
+   RODAPÉ
+   ================================================================ */
+
+.rodape {
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: #172033;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.rodape p {
+    margin: 0;
+}
+
+
+/* ================================================================
+   RESPONSIVIDADE
+   ================================================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+
+    .navbar-titulo {
+        font-size: 21px;
+
+        text-align: center;
+    }
+
+
+    .nav-links {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .nav-links a {
+        font-size: 14px;
+
+        padding: 9px 12px;
+    }
+
+
+    .conteudo {
+        padding: 30px 15px;
+    }
+
+
+    .pagina {
+        padding: 35px 25px;
+    }
+
+
+    .pagina h1 {
+        font-size: 28px;
+    }
+
+
+    .pagina-calculo {
+        padding: 25px 20px;
+    }
+}
+
+
+/* ================================================================
+   TELAS MUITO PEQUENAS
+   ================================================================ */
+
+@media (max-width: 480px) {
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+
+    .nav-links li {
+        width: 100%;
+    }
+
+
+    .nav-links a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .pagina-calculo {
+        padding: 22px 16px;
+    }
+}
+
+
+/* ----------------------------------------------------------------
+   PÁGINA
+   ---------------------------------------------------------------- */
+
+.pagina-imc {
+    max-width: 600px;
+}
+
+
+/* ----------------------------------------------------------------
+   CABEÇALHO DA CALCULADORA
+   ---------------------------------------------------------------- */
+
+.calculo-cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ----------------------------------------------------------------
+   ÍCONE
+   ---------------------------------------------------------------- */
+
+.calculo-icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    background-color: #eff6ff;
+
+    font-size: 30px;
+}
+
+
+/* ----------------------------------------------------------------
+   TÍTULO
+   ---------------------------------------------------------------- */
+
+.calculo-cabecalho h1 {
+    margin: 0 0 12px;
+
+    color: var(--cor-principal);
+
+    font-size: 32px;
+}
+
+
+/* ----------------------------------------------------------------
+   DESCRIÇÃO
+   ---------------------------------------------------------------- */
+
+.calculo-cabecalho p {
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ----------------------------------------------------------------
+   RESULTADO DO IMC
+   ---------------------------------------------------------------- */
+
+.pagina-imc .resultado {
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 25px;
+}
+
+
+/* ----------------------------------------------------------------
+   TÍTULO DO RESULTADO
+   ---------------------------------------------------------------- */
+
+.pagina-imc .resultado h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--cor-texto);
+
+    font-size: 22px;
+}
+
+
+/* ----------------------------------------------------------------
+   VALOR DO IMC
+   ---------------------------------------------------------------- */
+
+.pagina-imc .resultado-valor {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 38px;
+}
+
+
+/* ----------------------------------------------------------------
+   CLASSIFICAÇÃO
+   ---------------------------------------------------------------- */
+
+.pagina-imc .resultado-classificacao {
+    font-size: 20px;
+}
+
+
+/* ----------------------------------------------------------------
+   MELHORIA VISUAL NOS CAMPOS
+   ---------------------------------------------------------------- */
+
+.pagina-imc .formulario input {
+    height: 48px;
+
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------------
+   BOTÃO DO IMC
+   ---------------------------------------------------------------- */
+
+.pagina-imc .formulario button {
+    height: 50px;
+
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------------
+   PÁGINA
+   ---------------------------------------------------------------- */
+
+.pagina-tmb {
+    max-width: 600px;
+}
+
+
+/* ----------------------------------------------------------------
+   CAMPOS DA TMB
+   ---------------------------------------------------------------- */
+
+.pagina-tmb .formulario input,
+.pagina-tmb .formulario select {
+    height: 48px;
+
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------------
+   SELECT
+   ---------------------------------------------------------------- */
+
+.pagina-tmb .formulario select {
+    width: 100%;
+
+    padding: 0 14px;
+
+    border: 1px solid var(--cor-borda);
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: var(--cor-texto);
+
+    cursor: pointer;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ----------------------------------------------------------------
+   SELECT AO RECEBER FOCO
+   ---------------------------------------------------------------- */
+
+.pagina-tmb .formulario select:focus {
+    border-color: var(--cor-principal);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ----------------------------------------------------------------
+   BOTÃO
+   ---------------------------------------------------------------- */
+
+.pagina-tmb .formulario button {
+    height: 50px;
+
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------------
+   VALOR DA TMB
+   ---------------------------------------------------------------- */
+
+.pagina-tmb .resultado-valor {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 34px;
+}
+
+
+/* ----------------------------------------------------------------
+   CLASSIFICAÇÃO
+   ---------------------------------------------------------------- */
+
+.pagina-tmb .resultado-classificacao {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+}
+
+
+/* ----------------------------------------------------------------
+   GASTO ENERGÉTICO TOTAL
+   ---------------------------------------------------------------- */
+
+.resultado-gasto {
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--cor-borda);
+}
+
+
+.resultado-gasto p {
+    margin-bottom: 8px;
+}
+
+
+.resultado-gasto strong {
+    display: block;
+
+    font-size: 24px;
+
+    color: var(--cor-principal);
+}
+
+
+/* ----------------------------------------------------------------
+   PÁGINA
+   ---------------------------------------------------------------- */
+
+.pagina-hidratacao {
+    max-width: 600px;
+}
+
+
+/* ----------------------------------------------------------------
+   CAMPO DE PESO
+   ---------------------------------------------------------------- */
+
+.pagina-hidratacao .formulario input {
+    height: 48px;
+
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------------
+   BOTÃO
+   ---------------------------------------------------------------- */
+
+.pagina-hidratacao .formulario button {
+    height: 50px;
+
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------------
+   RESULTADO
+   ---------------------------------------------------------------- */
+
+.pagina-hidratacao .resultado {
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 25px;
+}
+
+
+/* ----------------------------------------------------------------
+   TÍTULO DO RESULTADO
+   ---------------------------------------------------------------- */
+
+.pagina-hidratacao .resultado h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--cor-texto);
+
+    font-size: 22px;
+}
+
+
+/* ----------------------------------------------------------------
+   VALOR EM LITROS
+   ---------------------------------------------------------------- */
+
+.pagina-hidratacao .resultado-valor {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--cor-principal);
+
+    font-size: 34px;
+}
+
+
+/* ----------------------------------------------------------------
+   ÁREA DOS COPOS
+   ---------------------------------------------------------------- */
+
+.resultado-copos {
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--cor-borda);
+}
+
+
+/* ----------------------------------------------------------------
+   TEXTO DOS COPOS
+   ---------------------------------------------------------------- */
+
+.resultado-copos p {
+    margin-bottom: 8px;
+}
+
+
+/* ----------------------------------------------------------------
+   QUANTIDADE DE COPOS
+   ---------------------------------------------------------------- */
+
+.resultado-copos strong {
+    display: block;
+
+    color: var(--cor-principal);
+
+    font-size: 22px;
+}
+
+
+/* ----------------------------------------------------------------
+   NAVBAR
+   ---------------------------------------------------------------- */
+
+.navbar {
+    min-height: 80px;
+
+    padding: 15px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+
+    border-bottom: 3px solid #1d4ed8;
+}
+
+
+/* ----------------------------------------------------------------
+   TÍTULO / LOGO
+   ---------------------------------------------------------------- */
+
+.navbar-titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 23px;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* ----------------------------------------------------------------
+   EFEITO AO PASSAR O MOUSE NO TÍTULO
+   ---------------------------------------------------------------- */
+
+.navbar-titulo:hover {
+    opacity: 0.8;
+
+    transform: translateY(-1px);
+}
+
+
+/* ----------------------------------------------------------------
+   MENU
+   ---------------------------------------------------------------- */
+
+.nav-links {
+    gap: 6px;
+}
+
+
+/* ----------------------------------------------------------------
+   LINKS
+   ---------------------------------------------------------------- */
+
+.nav-links a {
+    position: relative;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* ----------------------------------------------------------------
+   LINK AO PASSAR O MOUSE
+   ---------------------------------------------------------------- */
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------------------------
+   LINK DA PÁGINA ATUAL
+   ---------------------------------------------------------------- */
+
+.nav-links a.link-ativo {
+    background-color: white;
+
+    color: var(--cor-principal);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ----------------------------------------------------------------
+   PEQUENO INDICADOR ABAIXO DO LINK ATIVO
+   ---------------------------------------------------------------- */
+
+.nav-links a.link-ativo::after {
+    content: '';
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 4px;
+
+    width: 20px;
+
+    height: 2px;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+
+    background-color: var(--cor-principal);
+}
+
+
+/* ----------------------------------------------------------------
+   AJUSTE PARA TELAS MENORES
+   ---------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .navbar-titulo {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+}
+
+
+/* ----------------------------------------------------------------
+   ÁREA PRINCIPAL DA EXPLICAÇÃO
+   ---------------------------------------------------------------- */
+
+.home-info {
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 1px solid var(--cor-borda);
+}
+
+
+/* ----------------------------------------------------------------
+   TÍTULO
+   ---------------------------------------------------------------- */
+
+.home-info h2 {
+    margin: 0 0 10px;
+    color: var(--cor-texto);
+    font-size: 25px;
+}
+
+
+/* ----------------------------------------------------------------
+   TEXTO INTRODUTÓRIO
+   ---------------------------------------------------------------- */
+
+.home-info-intro {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: var(--cor-texto-secundario);
+    font-size: 15px;
+}
+
+
+/* ----------------------------------------------------------------
+   CARTÕES EXPLICATIVOS
+   ---------------------------------------------------------------- */
+
+.home-info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+/* ----------------------------------------------------------------
+   CADA CARTÃO
+   ---------------------------------------------------------------- */
+
+.home-info-item {
+    padding: 22px;
+    background-color: #f8fafc;
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    text-align: left;
+}
+
+
+/* ----------------------------------------------------------------
+   ÍCONE
+   ---------------------------------------------------------------- */
+
+.home-info-icon {
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+/* ----------------------------------------------------------------
+   TÍTULO DO CARTÃO
+   ---------------------------------------------------------------- */
+
+.home-info-item h3 {
+    margin: 12px 0 8px;
+    color: var(--cor-texto);
+    font-size: 18px;
+}
+
+
+/* ----------------------------------------------------------------
+   TEXTO DO CARTÃO
+   ---------------------------------------------------------------- */
+
+.home-info-item p {
+    margin: 0;
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ----------------------------------------------------------------
+   AVISO
+   ---------------------------------------------------------------- */
+
+.home-aviso {
+    margin-top: 25px;
+    padding: 15px 18px;
+    background-color: #f8fafc;
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    color: var(--cor-texto-secundario);
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* ----------------------------------------------------------------
+   DESTAQUE DO "IMPORTANTE"
+   ---------------------------------------------------------------- */
+
+.home-aviso strong {
+    color: var(--cor-texto);
+}
+
+
+/* ================================================================
+   RESPONSIVIDADE
+   ================================================================ */
+
+@media (max-width: 800px) {
+
+    .home-info-cards {
+        grid-template-columns: 1fr;
+    }
+
+}

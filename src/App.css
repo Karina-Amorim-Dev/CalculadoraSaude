@@ -1,0 +1,358 @@
+/* ================================================================
+   PÁGINAS DE CÁLCULO
+   ================================================================ */
+
+.pagina-calculo {
+    width: 100%;
+    max-width: 620px;
+    margin: 50px auto;
+    padding: 40px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 2px 8px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ================================================================
+   EFEITO DO CARD
+   ================================================================ */
+
+.pagina-calculo:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.10),
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================================================
+   TÍTULOS
+   ================================================================ */
+
+.pagina-calculo h1 {
+    margin: 0 0 10px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: var(--text-h);
+}
+
+
+.pagina-calculo h2 {
+    margin: 0 0 20px;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: var(--text-h);
+}
+
+
+/* ================================================================
+   TEXTOS
+   ================================================================ */
+
+.pagina-calculo p {
+    margin: 8px 0;
+
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ================================================================
+   FORMULÁRIO
+   ================================================================ */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* ================================================================
+   LABELS
+   ================================================================ */
+
+.pagina-calculo label {
+    margin-top: 14px;
+
+    color: var(--text-h);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ================================================================
+   CAMPOS
+   ================================================================ */
+
+.pagina-calculo input,
+.pagina-calculo select {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    background: #fafafa;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    color: var(--text-h);
+
+    font-size: 16px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+
+/* ================================================================
+   HOVER DOS CAMPOS
+   ================================================================ */
+
+.pagina-calculo input:hover,
+.pagina-calculo select:hover {
+    border-color: #bdbdbd;
+}
+
+
+/* ================================================================
+   FOCO DOS CAMPOS
+   ================================================================ */
+
+.pagina-calculo input:focus,
+.pagina-calculo select:focus {
+    outline: none;
+
+    background: #ffffff;
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 0 3px var(--accent-bg);
+}
+
+
+/* ================================================================
+   PLACEHOLDER
+   ================================================================ */
+
+.pagina-calculo input::placeholder {
+    color: #999999;
+}
+
+
+/* ================================================================
+   BOTÃO
+   ================================================================ */
+
+.pagina-calculo button {
+    width: 100%;
+
+    margin-top: 22px;
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--accent);
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+/* ================================================================
+   HOVER DO BOTÃO
+   ================================================================ */
+
+.pagina-calculo button:hover {
+    filter: brightness(0.92);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ================================================================
+   CLIQUE DO BOTÃO
+   ================================================================ */
+
+.pagina-calculo button:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================================================
+   ÁREA DE RESULTADO
+   ================================================================ */
+
+.resultado {
+    margin-top: 30px;
+    padding: 24px;
+
+    background: #f8f9fa;
+
+    border: 1px solid #e6e6e6;
+    border-left: 5px solid var(--accent);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+
+    animation: aparecerResultado 0.35s ease;
+}
+
+
+/* ================================================================
+   ANIMAÇÃO DO RESULTADO
+   ================================================================ */
+
+@keyframes aparecerResultado {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================================================================
+   TÍTULO DO RESULTADO
+   ================================================================ */
+
+.resultado h2 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+}
+
+
+/* ================================================================
+   VALORES DO RESULTADO
+   ================================================================ */
+
+.resultado strong {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* ================================================================
+   IMC NORMAL
+   ================================================================ */
+
+.resultado.imc-normal {
+    background-color: #eefaf2;
+
+    border-left-color: var(--cor-sucesso);
+}
+
+
+.resultado.imc-normal strong {
+    color: var(--cor-sucesso);
+}
+
+
+/* ================================================================
+   IMC / TMB ATENÇÃO
+   ================================================================ */
+
+.resultado.imc-atencao {
+    background-color: #fff8e8;
+
+    border-left-color: var(--cor-atencao);
+}
+
+
+.resultado.imc-atencao strong {
+    color: var(--cor-atencao);
+}
+
+
+/* ================================================================
+   IMC / TMB ALERTA
+   ================================================================ */
+
+.resultado.imc-alerta {
+    background-color: #fff0ef;
+
+    border-left-color: var(--cor-alerta);
+}
+
+
+.resultado.imc-alerta strong {
+    color: var(--cor-alerta);
+}
+
+
+/* ================================================================
+   RESPONSIVIDADE
+   ================================================================ */
+
+@media (max-width: 700px) {
+
+    .pagina-calculo {
+        margin: 25px 15px;
+        padding: 25px;
+
+        width: calc(100% - 30px);
+    }
+
+
+    .pagina-calculo h1 {
+        font-size: 25px;
+    }
+
+
+    .pagina-calculo h2 {
+        font-size: 21px;
+    }
+
+}

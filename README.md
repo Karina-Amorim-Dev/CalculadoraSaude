@@ -137,17 +137,8 @@ Na Home, o usuário pode conhecer as funcionalidades da aplicação e acessar as
 
 ### 📸 Screenshot da Home
 
-> **ADICIONE AQUI O PRINT DA HOME**
-
-```text
-📷 Coloque aqui uma imagem da tela inicial.
-```
-
-Exemplo de organização:
-
-```markdown
-![Tela inicial da Calculadora de Saúde](./screenshots/home.png)
-```
+<img width="1885" height="902" alt="Home" src="https://github.com/user-attachments/assets/db01bd60-285a-4c92-8612-5abdc9aa8012" />
+<img width="1892" height="797" alt="Home1" src="https://github.com/user-attachments/assets/2eb29684-01bf-4a2b-bf47-49c79036a3ec" />
 
 ---
 
@@ -157,9 +148,7 @@ A tela de IMC permite que o usuário informe os dados necessários para realizar
 
 ### 📸 Screenshot da calculadora de IMC
 
-<img width="1885" height="902" alt="Home" src="https://github.com/user-attachments/assets/db01bd60-285a-4c92-8612-5abdc9aa8012" />
-<img width="1892" height="797" alt="Home1" src="https://github.com/user-attachments/assets/2eb29684-01bf-4a2b-bf47-49c79036a3ec" />
-
+<img width="797" height="736" alt="IMC" src="https://github.com/user-attachments/assets/4ca70186-c653-4a11-a9f0-9784f0dfdc75" />
 
 ---
 
@@ -169,17 +158,8 @@ A tela de TMB permite que o usuário informe os dados necessários para realizar
 
 ### 📸 Screenshot da calculadora de TMB
 
-> **ADICIONE AQUI O PRINT DA TELA DE TMB**
-
-```text
-📷 Coloque aqui uma imagem da tela de TMB.
-```
-
-Exemplo:
-
-```markdown
-![Calculadora de TMB](./screenshots/tmb.png)
-```
+<img width="786" height="676" alt="TMB" src="https://github.com/user-attachments/assets/66afe0e1-e350-4ffe-922b-cd3f980449a3" />
+<img width="812" height="397" alt="TMB1" src="https://github.com/user-attachments/assets/faae2f08-089f-44b3-94a3-49da75007f36" />
 
 ---
 
@@ -189,17 +169,7 @@ A tela de Hidratação permite que o usuário informe seus dados e obtenha uma e
 
 ### 📸 Screenshot da calculadora de Hidratação
 
-> **ADICIONE AQUI O PRINT DA TELA DE HIDRATAÇÃO**
-
-```text
-📷 Coloque aqui uma imagem da tela de Hidratação.
-```
-
-Exemplo:
-
-```markdown
-![Calculadora de Hidratação](./screenshots/hidratacao.png)
-```
+<img width="797" height="567" alt="Hidratacao" src="https://github.com/user-attachments/assets/05249760-a3e0-4673-a93c-32d5e908e3ac" />
 
 ---
 

@@ -361,40 +361,40 @@ Antes de considerar uma versão do projeto concluída, é importante verificar a
 
 ### Home
 
-* [ ] A Home abre corretamente;
-* [ ] O conteúdo explicativo aparece corretamente;
-* [ ] O menu é exibido;
-* [ ] Os links funcionam.
+* [x] A Home abre corretamente;
+* [x] O conteúdo explicativo aparece corretamente;
+* [x] O menu é exibido;
+* [x] Os links funcionam.
 
 ### IMC
 
-* [ ] Os campos podem ser preenchidos;
-* [ ] O cálculo é realizado;
-* [ ] O resultado aparece corretamente;
+* [x] Os campos podem ser preenchidos;
+* [x] O cálculo é realizado;
+* [x] O resultado aparece corretamente;
 * [ ] Valores inválidos são tratados.
 
 ### TMB
 
-* [ ] Os campos podem ser preenchidos;
-* [ ] O cálculo é realizado;
-* [ ] O resultado aparece corretamente;
+* [x] Os campos podem ser preenchidos;
+* [x] O cálculo é realizado;
+* [x] O resultado aparece corretamente;
 * [ ] Valores inválidos são tratados.
 
 ### Hidratação
 
-* [ ] Os campos podem ser preenchidos;
-* [ ] O cálculo é realizado;
-* [ ] O resultado aparece corretamente;
+* [x] Os campos podem ser preenchidos;
+* [x] O cálculo é realizado;
+* [x] O resultado aparece corretamente;
 * [ ] Valores inválidos são tratados.
 
 ### Navegação
 
-* [ ] O menu leva para a Home;
-* [ ] O menu leva para IMC;
-* [ ] O menu leva para TMB;
-* [ ] O menu leva para Hidratação;
-* [ ] Os links funcionam corretamente;
-* [ ] O usuário consegue retornar para a Home.
+* [x] O menu leva para a Home;
+* [x] O menu leva para IMC;
+* [x] O menu leva para TMB;
+* [x] O menu leva para Hidratação;
+* [x] Os links funcionam corretamente;
+* [x] O usuário consegue retornar para a Home.
 
 ---
 

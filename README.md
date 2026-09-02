@@ -1,203 +1,345 @@
 # 🩺 Calculadora de Saúde
 
-Aplicação web desenvolvida em **React** com o objetivo de disponibilizar cálculos relacionados à saúde de forma simples, intuitiva e acessível.
+Aplicação web desenvolvida em **React** com o objetivo de disponibilizar cálculos relacionados à saúde e ao bem-estar de forma simples, organizada e intuitiva.
 
-O projeto foi desenvolvido como parte do processo de aprendizado em **Desenvolvimento Web**, utilizando React, Vite, JavaScript, componentes reutilizáveis e navegação entre diferentes funcionalidades.
+O projeto reúne **três calculadoras principais**:
 
-> ⚠️ **Aviso:** Esta aplicação possui finalidade educacional e informativa. Os resultados apresentados não substituem avaliação, diagnóstico ou orientação de profissionais da área da saúde.
+* ⚖️ **IMC** — Índice de Massa Corporal
+* 🔥 **TMB** — Taxa Metabólica Basal
+* 💧 **Hidratação** — Estimativa da quantidade diária de água
 
----
+Além das calculadoras, a aplicação possui uma **Home explicativa** e um sistema de navegação entre as diferentes funcionalidades.
 
-## 📋 Sobre o projeto
-
-A **Calculadora de Saúde** é uma aplicação web criada para reunir diferentes ferramentas de cálculo relacionadas à saúde em uma única interface.
-
-A proposta é oferecer uma experiência simples para que o usuário possa informar seus dados, realizar os cálculos e visualizar os resultados de maneira clara.
-
-O projeto também foi desenvolvido com foco em praticar conceitos importantes do desenvolvimento frontend moderno, como:
-
-* Componentização com React
-* Gerenciamento de estado
-* Eventos e formulários
-* Navegação entre páginas
-* Organização de componentes
-* Estilização com CSS
-* Validação de dados
-* Reutilização de código
-* Estruturação de projetos frontend
-* Versionamento utilizando Git e GitHub
+> **Importante:** os resultados apresentados pelas calculadoras são estimativas e possuem finalidade exclusivamente informativa e educacional. Eles não substituem avaliação, diagnóstico ou orientação de profissionais de saúde.
 
 ---
 
-## 🎯 Objetivos
+## 📌 Sobre o projeto
 
-O projeto tem como principais objetivos:
+A **Calculadora de Saúde** foi desenvolvida como um projeto prático para aplicar conhecimentos de desenvolvimento web utilizando **React**.
 
-* Criar uma aplicação web utilizando React.
-* Desenvolver uma interface simples e intuitiva.
-* Praticar componentes reutilizáveis.
-* Trabalhar com formulários e entrada de dados.
-* Realizar cálculos automaticamente.
-* Exibir resultados de forma organizada.
-* Praticar navegação entre diferentes páginas.
-* Aplicar conceitos de organização de projetos frontend.
-* Utilizar Git e GitHub para controle de versão.
+A proposta é criar uma aplicação simples, visualmente organizada e fácil de utilizar, permitindo que o usuário informe seus dados e obtenha rapidamente uma estimativa relacionada à sua saúde.
 
----
+O projeto também tem como objetivo colocar em prática conceitos importantes do desenvolvimento frontend, como:
 
-## ✨ Funcionalidades
-
-A aplicação conta com uma área inicial e ferramentas de cálculo relacionadas à saúde.
-
-### 🏠 Página inicial
-
-A Home apresenta a proposta da aplicação e permite que o usuário navegue para as diferentes calculadoras disponíveis.
-
-A página inicial funciona como ponto central da aplicação.
-
-### 🧮 Calculadora de IMC
-
-Permite calcular o **Índice de Massa Corporal (IMC)** a partir das informações fornecidas pelo usuário.
-
-O cálculo utiliza:
-
-**IMC = peso / altura²**
-
-Após o cálculo, a aplicação apresenta o resultado e uma classificação correspondente.
-
-### 📊 Resultado
-
-Depois de realizar um cálculo, o usuário recebe o resultado diretamente na interface.
-
-A apresentação do resultado foi pensada para facilitar a interpretação das informações.
-
-### 🧭 Navegação
-
-A aplicação possui navegação entre as páginas utilizando rotas, permitindo que o usuário acesse diferentes funcionalidades sem precisar recarregar manualmente a aplicação.
+* Componentização;
+* Rotas;
+* Navegação entre páginas;
+* Manipulação de estados;
+* Eventos;
+* Formulários;
+* Validação de dados;
+* Cálculos utilizando JavaScript;
+* Organização de arquivos;
+* Estilização com CSS;
+* Desenvolvimento de interfaces utilizando React.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+# 🎯 Objetivos
 
-### Frontend
+## Objetivo geral
 
-* **React**
-* **JavaScript**
-* **HTML5**
-* **CSS3**
+Desenvolver uma aplicação web utilizando React capaz de realizar cálculos básicos relacionados à saúde e apresentar os resultados de maneira clara e intuitiva.
 
-### Ferramentas
+## Objetivos específicos
 
-* **Vite**
-* **ESLint**
-* **Git**
-* **GitHub**
-* **Visual Studio Code**
-
----
-
-## ⚛️ React
-
-O projeto utiliza React para construção da interface através de componentes.
-
-A utilização de componentes permite organizar melhor a aplicação e facilitar a manutenção e evolução do código.
-
-Entre os conceitos praticados estão:
-
-* Componentes funcionais
-* Props
-* Hooks
-* Estado
-* Eventos
-* Formulários
-* Renderização condicional
-* Componentização
+* Criar uma interface simples e organizada;
+* Desenvolver uma página inicial explicativa;
+* Criar diferentes páginas para cada calculadora;
+* Implementar navegação entre as páginas;
+* Trabalhar com componentes reutilizáveis;
+* Utilizar estados e eventos do React;
+* Realizar cálculos utilizando JavaScript;
+* Validar informações inseridas pelo usuário;
+* Apresentar os resultados de forma clara;
+* Praticar conceitos de desenvolvimento frontend;
+* Utilizar Git e GitHub para versionamento do projeto.
 
 ---
 
-## ⚡ Vite
+# 🧮 Calculadoras
 
-O projeto utiliza **Vite** como ferramenta de desenvolvimento e build.
+## ⚖️ IMC — Índice de Massa Corporal
 
-O Vite proporciona um ambiente rápido para desenvolvimento frontend, incluindo:
+A calculadora de **IMC** utiliza o peso e a altura informados pelo usuário para calcular o Índice de Massa Corporal.
 
-* Servidor de desenvolvimento
-* Hot Module Replacement (HMR)
-* Build para produção
-* Integração com React
+### Fórmula
+
+```text
+IMC = peso / (altura × altura)
+```
+
+O resultado é apresentado juntamente com uma classificação correspondente à faixa de IMC.
+
+### Dados utilizados
+
+* Peso;
+* Altura.
+
+### Exemplo
+
+```text
+Peso: 70 kg
+Altura: 1,70 m
+
+IMC ≈ 24,22
+```
+
+> O IMC é um indicador geral e não deve ser utilizado isoladamente para avaliar o estado de saúde de uma pessoa.
 
 ---
 
-## 📂 Estrutura do projeto
+## 🔥 TMB — Taxa Metabólica Basal
 
-A estrutura principal do projeto está organizada da seguinte maneira:
+A calculadora de **TMB** estima a quantidade de energia que o organismo necessita para manter suas funções básicas em repouso.
+
+Dependendo dos dados utilizados pela aplicação, o cálculo pode considerar informações como:
+
+* Peso;
+* Altura;
+* Idade;
+* Sexo.
+
+O resultado é apresentado em **calorias por dia (kcal/dia)**.
+
+### Objetivo
+
+A calculadora foi criada para demonstrar como diferentes informações fornecidas pelo usuário podem ser utilizadas em uma fórmula para gerar uma estimativa.
+
+> A TMB é uma estimativa e não representa necessariamente a necessidade calórica total diária de uma pessoa.
+
+---
+
+## 💧 Hidratação
+
+A calculadora de **Hidratação** fornece uma estimativa da quantidade de água que uma pessoa pode consumir diariamente com base nos dados informados.
+
+### Objetivo
+
+Facilitar a visualização de uma estimativa de consumo diário de água.
+
+O resultado pode ser apresentado em unidades como:
+
+```text
+Litros por dia
+```
+
+> A necessidade de hidratação pode variar de acordo com diversos fatores, como clima, atividade física, alimentação e condições individuais. O resultado da calculadora é apenas uma estimativa.
+
+---
+
+# 🏠 Home
+
+A página inicial apresenta o projeto e explica de forma resumida a finalidade das calculadoras disponíveis.
+
+Na Home, o usuário pode conhecer as funcionalidades da aplicação e acessar as calculadoras através do menu de navegação.
+
+### 📸 Screenshot da Home
+
+> **ADICIONE AQUI O PRINT DA HOME**
+
+```text
+📷 Coloque aqui uma imagem da tela inicial.
+```
+
+Exemplo de organização:
+
+```markdown
+![Tela inicial da Calculadora de Saúde](./screenshots/home.png)
+```
+
+---
+
+# ⚖️ Tela — IMC
+
+A tela de IMC permite que o usuário informe os dados necessários para realizar o cálculo do Índice de Massa Corporal.
+
+### 📸 Screenshot da calculadora de IMC
+
+<img width="1885" height="902" alt="Home" src="https://github.com/user-attachments/assets/db01bd60-285a-4c92-8612-5abdc9aa8012" />
+<img width="1892" height="797" alt="Home1" src="https://github.com/user-attachments/assets/2eb29684-01bf-4a2b-bf47-49c79036a3ec" />
+
+
+---
+
+# 🔥 Tela — TMB
+
+A tela de TMB permite que o usuário informe os dados necessários para realizar a estimativa da Taxa Metabólica Basal.
+
+### 📸 Screenshot da calculadora de TMB
+
+> **ADICIONE AQUI O PRINT DA TELA DE TMB**
+
+```text
+📷 Coloque aqui uma imagem da tela de TMB.
+```
+
+Exemplo:
+
+```markdown
+![Calculadora de TMB](./screenshots/tmb.png)
+```
+
+---
+
+# 💧 Tela — Hidratação
+
+A tela de Hidratação permite que o usuário informe seus dados e obtenha uma estimativa de consumo diário de água.
+
+### 📸 Screenshot da calculadora de Hidratação
+
+> **ADICIONE AQUI O PRINT DA TELA DE HIDRATAÇÃO**
+
+```text
+📷 Coloque aqui uma imagem da tela de Hidratação.
+```
+
+Exemplo:
+
+```markdown
+![Calculadora de Hidratação](./screenshots/hidratacao.png)
+```
+
+---
+
+# 🖥️ Tecnologias utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+| Tecnologia      | Utilização                            |
+| --------------- | ------------------------------------- |
+| ⚛️ React        | Desenvolvimento da interface          |
+| 🟨 JavaScript   | Lógica e cálculos                     |
+| 🌐 HTML5        | Estrutura das páginas                 |
+| 🎨 CSS3         | Estilização                           |
+| ⚡ Vite          | Ferramenta de desenvolvimento e build |
+| 🧭 React Router | Navegação entre páginas               |
+| 🧹 ESLint       | Padronização e análise do código      |
+| 📦 npm          | Gerenciamento de dependências         |
+| 🔧 Git          | Controle de versão                    |
+| 🐙 GitHub       | Hospedagem do código                  |
+
+---
+
+# ⚛️ Conceitos de React utilizados
+
+Durante o desenvolvimento da aplicação foram trabalhados conceitos importantes do React.
+
+### Componentes
+
+A interface é dividida em componentes, facilitando a organização e manutenção do código.
+
+### Props
+
+Permitem a comunicação e passagem de informações entre componentes quando necessário.
+
+### Estado
+
+Utilizado para controlar informações inseridas pelo usuário e resultados dos cálculos.
+
+### Eventos
+
+Utilizados para responder às ações realizadas pelo usuário, como:
+
+* Digitar informações;
+* Clicar em botões;
+* Enviar formulários.
+
+### React Router
+
+Utilizado para permitir a navegação entre as diferentes páginas da aplicação.
+
+---
+
+# 📁 Estrutura do projeto
+
+A estrutura do projeto é organizada seguindo a proposta de uma aplicação React.
 
 ```text
 CalculadoraSaude/
 │
 ├── public/
-│   └── arquivos públicos da aplicação
 │
 ├── src/
+│   │
 │   ├── assets/
-│   │   └── imagens e outros recursos
 │   │
 │   ├── components/
-│   │   └── componentes reutilizáveis
 │   │
 │   ├── pages/
-│   │   └── páginas da aplicação
 │   │
 │   ├── App.jsx
-│   │   └── componente principal
-│   │
 │   ├── main.jsx
-│   │   └── ponto de entrada da aplicação
-│   │
-│   └── arquivos CSS
+│   └── ...
 │
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
-├── package.json
 ├── package-lock.json
+├── package.json
 ├── vite.config.js
 └── README.md
 ```
 
-> A estrutura pode evoluir conforme novas funcionalidades forem adicionadas ao projeto.
+> A estrutura pode ser atualizada conforme novos componentes e funcionalidades forem adicionados ao projeto.
 
 ---
 
-## 🚀 Como executar o projeto
+# 🚀 Como executar o projeto
 
-Para executar o projeto localmente, primeiro é necessário ter o **Node.js** instalado.
+## 1. Pré-requisitos
 
-### 1. Clonar o repositório
+Antes de executar o projeto, é necessário ter instalado:
+
+* **Node.js**
+* **npm**
+* **Git**
+* **Visual Studio Code** ou outro editor de código.
+
+---
+
+## 2. Clonar o projeto
+
+No terminal, execute:
 
 ```bash
-git clone https://github.com/Karina-Amorim-Dev/CalculadoraSaude.git
+git clone
 ```
 
-### 2. Entrar na pasta do projeto
+Depois entre na pasta do projeto:
 
 ```bash
 cd CalculadoraSaude
 ```
 
-### 3. Instalar as dependências
+---
+
+## 3. Instalar as dependências
+
+Execute:
 
 ```bash
 npm install
 ```
 
-### 4. Executar o projeto
+Esse comando instala todas as dependências necessárias definidas no `package.json`.
+
+---
+
+## 4. Executar o projeto
+
+Execute:
 
 ```bash
 npm run dev
 ```
 
-Depois disso, o Vite disponibilizará a aplicação em um endereço local indicado pelo terminal, normalmente:
+O Vite irá iniciar o servidor de desenvolvimento.
+
+O terminal apresentará o endereço local para acessar a aplicação.
+
+Normalmente será algo semelhante a:
 
 ```text
 http://localhost:5173
@@ -205,152 +347,212 @@ http://localhost:5173
 
 ---
 
-## 📦 Scripts disponíveis
+# 📦 Scripts disponíveis
 
-Os principais comandos disponíveis no projeto são:
+No arquivo `package.json`, o projeto possui comandos para diferentes tarefas.
 
-### Desenvolvimento
+### Executar o projeto
 
 ```bash
 npm run dev
 ```
 
-Executa o servidor de desenvolvimento.
+Inicia o servidor de desenvolvimento.
 
-### Build
+### Gerar versão de produção
 
 ```bash
 npm run build
 ```
 
-Gera a versão otimizada da aplicação para produção.
+Cria a versão otimizada da aplicação para produção.
 
-### Preview
+### Visualizar o build
 
 ```bash
 npm run preview
 ```
 
-Executa uma prévia da versão gerada pelo build.
+Permite visualizar localmente a versão gerada pelo build.
 
-### Lint
+### Verificar o código
 
 ```bash
 npm run lint
 ```
 
-Executa o ESLint para verificar possíveis problemas no código.
+Executa o ESLint para identificar possíveis problemas no código.
 
 ---
 
-## 🧪 Validação
+# 🧪 Testes manuais
 
-Durante o desenvolvimento, recomenda-se verificar:
+Antes de considerar uma versão do projeto concluída, é importante verificar as principais funcionalidades.
 
-* Funcionamento das calculadoras.
-* Validação dos campos.
-* Comportamento com valores inválidos.
-* Navegação entre páginas.
-* Exibição correta dos resultados.
-* Funcionamento em diferentes tamanhos de tela.
-* Ausência de erros no console do navegador.
+### Home
+
+* [ ] A Home abre corretamente;
+* [ ] O conteúdo explicativo aparece corretamente;
+* [ ] O menu é exibido;
+* [ ] Os links funcionam.
+
+### IMC
+
+* [ ] Os campos podem ser preenchidos;
+* [ ] O cálculo é realizado;
+* [ ] O resultado aparece corretamente;
+* [ ] Valores inválidos são tratados.
+
+### TMB
+
+* [ ] Os campos podem ser preenchidos;
+* [ ] O cálculo é realizado;
+* [ ] O resultado aparece corretamente;
+* [ ] Valores inválidos são tratados.
+
+### Hidratação
+
+* [ ] Os campos podem ser preenchidos;
+* [ ] O cálculo é realizado;
+* [ ] O resultado aparece corretamente;
+* [ ] Valores inválidos são tratados.
+
+### Navegação
+
+* [ ] O menu leva para a Home;
+* [ ] O menu leva para IMC;
+* [ ] O menu leva para TMB;
+* [ ] O menu leva para Hidratação;
+* [ ] Os links funcionam corretamente;
+* [ ] O usuário consegue retornar para a Home.
 
 ---
 
-## 🔐 Segurança e privacidade
+# 🔐 Segurança e privacidade
 
-O projeto não deve armazenar informações pessoais ou dados sensíveis de usuários.
+A aplicação foi desenvolvida como um projeto frontend e não necessita, em sua versão atual, do armazenamento de informações pessoais em um banco de dados.
 
-Arquivos de configuração local e variáveis de ambiente não devem ser enviados para o repositório.
+Os dados informados nas calculadoras são utilizados para realizar os cálculos apresentados na própria aplicação.
 
-O arquivo `.gitignore` possui regras para evitar o versionamento de arquivos desnecessários, incluindo:
-
-```text
-node_modules/
-dist/
-dist-ssr/
-.env
-```
+Recomenda-se não inserir informações pessoais desnecessárias.
 
 ---
 
-## ⚠️ Limitações
+# ⚠️ Limitações
 
-A Calculadora de Saúde é um projeto educacional.
+A aplicação possui finalidade **educacional e informativa**.
 
-Os cálculos apresentados têm finalidade informativa e não devem ser utilizados como única base para decisões relacionadas à saúde.
+Os resultados apresentados são estimativas matemáticas e não devem ser considerados como diagnóstico ou recomendação médica.
 
-Para avaliações, diagnósticos ou recomendações personalizadas, procure um profissional qualificado da área da saúde.
+A aplicação não substitui:
+
+* Médicos;
+* Nutricionistas;
+* Educadores físicos;
+* Outros profissionais de saúde.
 
 ---
 
-## 🔮 Próximos passos
+# 🔮 Melhorias futuras
 
 Algumas funcionalidades que podem ser adicionadas futuramente:
 
-* [ ] Adicionar novas calculadoras de saúde
-* [ ] Melhorar a responsividade
-* [ ] Criar modo claro/escuro
-* [ ] Adicionar histórico de cálculos
-* [ ] Melhorar mensagens de validação
-* [ ] Adicionar animações à interface
-* [ ] Criar página de informações sobre cada cálculo
-* [ ] Melhorar acessibilidade
-* [ ] Criar testes automatizados
-* [ ] Realizar deploy da aplicação
-* [ ] Disponibilizar uma demonstração online
+* [ ] Melhorar a responsividade para celulares;
+* [ ] Criar modo escuro;
+* [ ] Melhorar as animações da interface;
+* [ ] Adicionar mais calculadoras;
+* [ ] Adicionar histórico de resultados;
+* [ ] Criar gráficos;
+* [ ] Melhorar a acessibilidade;
+* [ ] Adicionar testes automatizados;
+* [ ] Criar sistema de usuários;
+* [ ] Permitir salvar resultados;
+* [ ] Criar uma API;
+* [ ] Adicionar banco de dados;
+* [ ] Publicar a aplicação em produção.
 
 ---
 
-## 📚 Aprendizados
+# 📚 Aprendizados
 
-O desenvolvimento deste projeto proporciona prática em diversas áreas do desenvolvimento frontend, principalmente:
+O desenvolvimento deste projeto permitiu praticar conceitos relacionados ao desenvolvimento frontend e ao ecossistema React.
 
-* Desenvolvimento de interfaces com React
-* Organização de componentes
-* JavaScript moderno
-* Manipulação de estados
-* Formulários
-* Validação de dados
-* Rotas e navegação
-* CSS
-* Estruturação de projetos
-* NPM
-* Vite
-* ESLint
-* Git
-* GitHub
+Entre os principais conhecimentos trabalhados estão:
 
----
-
-## 💻 Desenvolvimento
-
-Projeto desenvolvido utilizando **React + Vite**.
-
-O projeto faz parte da evolução prática no desenvolvimento de aplicações web e tem como objetivo fortalecer conhecimentos em frontend e boas práticas de desenvolvimento.
+* Desenvolvimento de aplicações React;
+* Criação e organização de componentes;
+* Utilização de JavaScript;
+* Manipulação de estados;
+* Eventos;
+* Formulários;
+* Validação de dados;
+* Cálculos matemáticos;
+* Navegação entre páginas;
+* React Router;
+* CSS;
+* Vite;
+* npm;
+* ESLint;
+* Git;
+* GitHub;
+* Organização de projetos.
 
 ---
 
-## 👩‍💻 Autora
+# 🌱 Evolução do projeto
+
+O projeto foi desenvolvido de maneira incremental, permitindo adicionar novas funcionalidades conforme os conhecimentos foram sendo adquiridos.
+
+A ideia é continuar utilizando a aplicação como forma de praticar desenvolvimento web e, futuramente, evoluí-la para uma solução mais completa.
+
+---
+
+# 👩‍💻 Autora
 
 **Karina Amorim**
 
-Desenvolvedora em formação na área de **Análise e Desenvolvimento de Sistemas**.
-
-GitHub:
-
-**Karina-Amorim-Dev**
+Projeto desenvolvido como parte dos estudos em **Análise e Desenvolvimento de Sistemas**.
 
 ---
 
-## 📌 Repositório
+# 🐙 Repositório
 
-O código-fonte deste projeto está disponível no GitHub:
+O projeto está disponível no GitHub como:
 
 **CalculadoraSaude**
 
+---
+
+# 📄 Licença
+
+Este projeto foi desenvolvido para fins **educacionais e de aprendizado**.
+
+---
+
+# ⭐ Considerações finais
+
+A **Calculadora de Saúde** reúne três ferramentas em uma única aplicação:
+
 ```text
-https://github.com/Karina-Amorim-Dev/CalculadoraSaude
+⚖️ IMC
+   ↓
+Índice de Massa Corporal
+
+🔥 TMB
+   ↓
+Taxa Metabólica Basal
+
+💧 Hidratação
+   ↓
+Estimativa de consumo de água
 ```
 
+O projeto representa uma aplicação prática dos conhecimentos adquiridos em desenvolvimento web com **React, JavaScript, HTML, CSS, Vite, Git e GitHub**.
 
+---
+
+## 💡 Status do projeto
+
+🚧 **Em desenvolvimento**
+
+Novas funcionalidades e melhorias poderão ser adicionadas conforme a evolução do projeto.
